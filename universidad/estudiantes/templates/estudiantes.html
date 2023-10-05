@@ -1,9 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Aquí van los estudiantes!</h1>
-<p>Estudiantes!</p>
-
-</body>
-</html>
+<table border='1'>
+    <tr>
+        <th>Id estudiantes</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Fecha inscripcion</th>
+    </tr>
+    {% for x in misestudiantes %}
+        <tr>
+            <td>{{ x.id }}</td>
+            <td>{{ x.nombres }}</td>
+            <td>{{ x.apellidos }}</td>
+            <td>{{ x.fecha_inscripcion }}</td>
+        </tr>
+    {% endfor %}
+</table>

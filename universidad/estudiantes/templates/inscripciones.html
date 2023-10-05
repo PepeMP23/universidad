@@ -1,0 +1,14 @@
+<table border='1'>
+    <tr>
+        <th>Id inscripcion</th>
+        <th>Id curso</th>
+        <th>Id estudiante</th>
+    </tr>
+    {% for x in misinscripciones %}
+        <tr>
+            <td>{{ x.id_inscripcion }}</td>
+            <td>{{ x.id_curso }}</td>
+            <td>{{ x.id_estudiante }}</td>
+        </tr>
+    {% endfor %}
+</table>
