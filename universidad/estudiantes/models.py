@@ -25,4 +25,4 @@ class Inscripcion(models.Model):
         verbose_name_plural = "Inscripciones"
 
     def __str__(self):
-        return Estudiante
+        return f"{self.id_curso} {self.id_estudiante}"
